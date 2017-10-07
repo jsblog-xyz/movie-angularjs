@@ -1,4 +1,4 @@
-Run the Movie App example from this post, just follow these steps:
+To run the Movie App , just follow these steps:
 
 1. Download and install Node.js and NPM (if you don’t already have them).
 2. Open a command prompt and go to the angular2-movie-app folder.
