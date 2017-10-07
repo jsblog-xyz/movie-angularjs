@@ -1,0 +1,32 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Star Wars",
+      "director": "Lucas",
+      "releaseYear": "1977",
+      "genre": "Action, Adventure, Fantasy "
+    },
+    {
+      "id": 2,
+      "title": "King Kong",
+      "director": "Jackson",
+      "releaseYear": "2005",
+      "genre": "Action, Adventure, Drama "
+    },
+    {
+      "id": 3,
+      "title": "Iron Man 3",
+      "director": "Shane Black",
+      "releaseYear": "2013",
+      "genre": "Action, Adventure, Sci-Fi "
+    },
+    {
+      "title": "The Avengers",
+      "releaseYear": "2012",
+      "director": "Joss Whedon",
+      "genre": "Action, Adventure, Sci-Fi",
+      "id": 4
+    }
+  ]
+}
