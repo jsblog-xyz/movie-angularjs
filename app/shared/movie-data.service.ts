@@ -17,7 +17,7 @@ export class MovieDataService {
   }
 
   getMovie(id: number) {
-    return this.getMovies().then(movies => movies.find(movie => movie._id === id));
+    return this.getMovies().then(movies => movies.find(movie => movie.id === id));
   }
 
   private post(movie: Movie): Promise<Movie> {
@@ -30,13 +30,13 @@ export class MovieDataService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    let url = `${this.moviesUrl}/${movie._id}`;
+    let url = `${this.moviesUrl}/${movie.id}`;
 
     return this.http.put(url, JSON.stringify(movie), {headers: headers}).toPromise().then(() => movie).catch(this.handleError);
   }
 
   delete(movie: Movie): Promise<Response> {
-    let url = `${this.moviesUrl}/${movie._id}`;
+    let url = `${this.moviesUrl}/${movie.id}`;
     return this.http.delete(url).toPromise().catch(this.handleError);
   }
 
