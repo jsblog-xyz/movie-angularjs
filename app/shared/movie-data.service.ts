@@ -41,7 +41,7 @@ export class MovieDataService {
   }
 
   save(movie: Movie): Promise<Movie> {
-    if(movie._id) {
+    if(movie.id) {
       return this.put(movie);
     } else {
       return this.post(movie);
